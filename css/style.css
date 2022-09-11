@@ -1,6 +1,19 @@
 @import "./global/global.css";
+
+/** Utils **/
 @import "./utils/typography.css";
 @import "./utils/colors.css";
+
+/** Header **/
 @import "./global/header.css";
+
+/** Components **/
 @import "./utils/components.css";
+
+/** Pages **/
+
+/** Home **/
 @import "./home/introduction.css";
+
+/** Bykes **/
+@import "./bikes/bikes-list.css";

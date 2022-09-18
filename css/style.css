@@ -20,3 +20,6 @@
 
 /** Bykes **/
 @import "./bikes/bikes-list.css";
+
+/** Insurances **/
+@import "./insurances/insurances.css";

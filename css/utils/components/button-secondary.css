@@ -1,0 +1,8 @@
+.button-secondary {
+    background: var(--color-10);
+    color: var(--color-2);
+}
+
+.button-secondary:hover {
+    background: var(--color-9);
+}

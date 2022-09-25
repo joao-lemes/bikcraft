@@ -1,12 +1,13 @@
 .bikes-bg {
-    background: var(--color-11);
+    background: linear-gradient(to right, var(--color-0) 30%, var(--color-11) 0);
 }
 
 .bikes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .bikes-image {
@@ -30,6 +31,7 @@
 .bikes-content {
     display: grid;
     grid-template-columns: 1fr auto;
+    align-content: start;
 }
 
 .bikes-content h2 {
@@ -71,4 +73,33 @@
 
 .bikes-content a {
     place-self: end;
+}
+
+@media (max-width: 800px) {
+    .bikes-bg {
+        background: var(--color-11);
+    }
+    
+    .bikes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bikes-content {
+        grid-template-columns: 1fr;
+    }
+
+    .bikes-content ul {
+        font-size: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 32px;
+    }
+
+    .bikes-content a {
+        place-self: start;
+    }
 }

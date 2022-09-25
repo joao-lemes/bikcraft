@@ -1,0 +1,18 @@
+.button-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.button-arrow::after {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    background: url('../../../img/icons/arrow.svg');
+    transition: transform .2s;
+}
+
+.button-arrow:hover::after {
+    transform: translateX(4px);
+}

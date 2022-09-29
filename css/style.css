@@ -3,6 +3,7 @@
 /** Utils **/
 @import "./utils/typography.css";
 @import "./utils/colors.css";
+@import "./utils/form.css";
 
 /** Header **/
 @import "./global/header.css";
@@ -36,3 +37,8 @@
 
 /** Terms **/
 @import "./terms/terms.css";
+
+/** Contact **/
+@import "./contact/contact.css";
+@import "./contact/stores.css";
+

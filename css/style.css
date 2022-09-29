@@ -27,6 +27,7 @@
 
 /** Byke **/
 @import "./bike/bike.css";
+@import "./bike/insurance.css";
 
 /** Insurances **/
 @import "./insurances/insurances.css";

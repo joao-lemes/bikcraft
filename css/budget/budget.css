@@ -36,6 +36,24 @@
     background: var(--color-12);
 }
 
+.budget-product label {
+    background: #ccc;
+    padding: 20px;
+    display: inline-block;
+}
+
+.budget-content {
+    padding: 20px;
+    background: #222;
+    margin: 20px 0;
+    display: none;
+}
+
+#bikcraft:checked ~ #budget-bikcraft,
+#insurance:checked ~ #budget-insurance {
+    display: block;
+}
+
 .budget-data {
     border-radius: 0 5px 5px 0;
     background: var(--color-0);

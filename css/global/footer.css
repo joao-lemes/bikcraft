@@ -25,7 +25,7 @@
     margin-bottom: 16px;
 }
 
-.footer-contact li:nth-child(even):after {
+.footer-contact li:nth-child(even)::after {
     content: "";
     display: block;
     max-width: 360px;

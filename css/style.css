@@ -4,6 +4,7 @@
 @import "./utils/typography.css";
 @import "./utils/colors.css";
 @import "./utils/form.css";
+@import "./utils/animation.css";
 
 /** Header **/
 @import "./global/header.css";

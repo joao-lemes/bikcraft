@@ -60,3 +60,8 @@ function changeImage(e) {
         galleryContainer.prepend(e.currentTarget);
     }
 }
+
+// Animation
+if (window.SimpleAnime) {
+    new SimpleAnime();
+}

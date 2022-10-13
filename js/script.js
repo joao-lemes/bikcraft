@@ -39,9 +39,24 @@ function questionsEvents(item) {
 
 function activeQuestions(e) {
     const question = e.currentTarget;
-    const controls = question.getAttribute('aria-controls');
-    const answer = document.querySelector('#' + controls);
+    const answer = document.querySelector('#' + question.getAttribute('aria-controls'));
 
     answer.classList.toggle('actived');
     question.setAttribute('aria-expanded', answer.classList.contains('actived'));
+}
+
+// Bike Gallery
+const gallery = document.querySelectorAll('.bike-images img');
+const galleryContainer = document.querySelector('.bike-images');
+
+gallery.forEach(galleryEvents);
+
+function galleryEvents(item) {
+    item.addEventListener('click', changeImage);
+}
+
+function changeImage(e) {
+    if (matchMedia('(min-width: 1000px)').matches) {
+        galleryContainer.prepend(e.currentTarget);
+    }
 }

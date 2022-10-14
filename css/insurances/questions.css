@@ -50,15 +50,18 @@
     transform: rotate(180deg);
 }
 
+.js .questions dd {
+    display: none;    
+}
+
+.js .questions dd.actived {
+    display: block;
+}
+
 .questions dd {
     padding-left: 20px;
     padding-top: 16px;
     max-width: 80ch;
-    display: none;
-}
-
-.questions dd.actived {
-    display: block;
 }
 
 @media (max-width: 800px) {
